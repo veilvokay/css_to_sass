@@ -109,7 +109,7 @@ a {
 
 
 .section-1 {
-    background: url(../images/bg.png);
+    background: url(../../images/bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,15 +246,15 @@ h3 {
 }
 
 .art-dir {
-    background-image: url(../images/person1.png);
+    background-image: url(../../images/person1.png);
 }
 
 .web-eng {
-    background-image: url(../images/person2.png);
+    background-image: url(../../images/person2.png);
 }
 
 .dev {
-    background-image: url(../images/person3.png);
+    background-image: url(../../images/person3.png);
 }
 
 @keyframes fadeIn {
@@ -355,7 +355,7 @@ h3 {
 }
 
 .bg-black {
-    background: url(../images/black-bg.png)
+    background: url(../../images/black-bg.png)
 }
 
 .btn-mine {
