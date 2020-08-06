@@ -1,0 +1,23 @@
+.section-4 {
+    @include paddingSection(170px, 0, 140px, 0);
+
+    color: $mainWhite;
+
+    h3 {
+        color: $mainWhite;
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.bg-black {
+    background: url(../../images/black-bg.png);
+}
+
+.imac-position {
+    transform: translateY(-30px);
+}

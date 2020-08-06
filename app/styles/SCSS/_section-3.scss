@@ -1,0 +1,39 @@
+.section-3 {
+    @include paddingSection(145px, 0, 145px, 0);
+
+    .nav-item h5 {
+        font-size: 14px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .nav-link {
+        color: $navLink;
+        padding: 0;
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 35px;
+        }
+
+        &.active {
+            color: $mainBlack;
+        }
+    }
+
+    .nav-tabs {
+        margin-bottom: 80px;
+    }
+
+    .title {
+        margin-bottom: 125px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .section-3 .nav-item {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}

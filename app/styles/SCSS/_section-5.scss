@@ -1,0 +1,49 @@
+.section-5 {
+    @include paddingSection(140px, 0, 10px, 0);
+
+    .container-fluid {
+        margin-top: 85px;
+    }
+
+    .col-12 ul {
+        padding-bottom: 50px;
+    }
+
+    .col-12 li a {
+        padding: 0;
+
+        &:nth-child(-n+3) {
+            padding-right: 70px;
+        }
+    }
+
+    p {
+        padding-top: 80px;
+        color: $mainGrey;
+    }
+
+    .nav-link {
+        color: $navLink;
+        letter-spacing: 5px;
+
+        &.active {
+            color: $mainBlack;
+        }
+    }
+
+    .img {
+        width: 100%;
+
+        &.img-color {
+            display: none;
+        }
+    }
+
+    .row .col-4:hover .bw {
+        display: none;
+    }
+
+    .row .col-4:hover .img-color {
+        display: inline-block;
+    }
+}

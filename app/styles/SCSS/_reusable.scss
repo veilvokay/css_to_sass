@@ -5,3 +5,24 @@
 .m-top-100 {
     margin-top: 100px;
 }
+
+.m-top-30 {
+    margin-top: 30px;
+}
+
+.m-top-45 {
+    margin-top: 45px;
+}
+
+.btn-mine {
+    color: $mainBlack;
+    background-color: $btnBg;
+    border: none;
+    outline: none;
+    padding: 1px 40px;
+
+    font: {
+        size: 14px;
+        family: $sansRegular;
+    }
+}
