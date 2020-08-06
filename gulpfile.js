@@ -23,7 +23,7 @@ const path = {
             './app/js/libs/*.js',
             './app/js/bootstrap.js'
         ],
-        fonst: ['./app/fonts/**/*'],
+        fonts: ['./app/fonts/**/*'],
         images: './app/images/**/*'
     },
     build: {
@@ -67,7 +67,7 @@ function html () {
 };
 
 function fonts () {
-    return gulp.src(path.src.fonst)
+    return gulp.src(path.src.fonts)
     .pipe(gulp.dest(path.build.fonts))
     .pipe(reload({stream: true}))
 };
