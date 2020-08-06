@@ -1,0 +1,110 @@
+.section-2 {
+    @include paddingSection(145px, 0, 145px, 0);
+
+    h3 {
+        color: $mainBlack;
+        font-size: 18px;
+        letter-spacing: 10px;
+    }
+
+    .articles {
+        color: $mainGrey;
+
+        & .col-lg-4 > p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        & .blockquote p {
+            font-size: 24px;
+            line-height: 35px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.team {
+    @include bgPosition(center, contain, no-repeat);
+
+    & + span {
+        text-transform: uppercase;
+        font: {
+            family: $dosis;
+            size: 15px;
+        }
+        margin-top: 30px;
+        margin-bottom: 15px;
+        display: inline-block;
+        letter-spacing: 4px;
+    }
+
+    p {
+        font: {
+            family: $sansRegular;
+            size: 11px;
+        }
+    }
+
+    h5 {
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    & ~ h5 {
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    &:hover .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 0.7;
+        animation-fill-mode: forwards;
+    }
+}
+
+.skills {
+    color: $mainWhite;
+    background-color: $mainBlack;
+    opacity: 0;
+    padding: 40px;
+
+    p {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    p.m-top-45 {
+        margin-top: 45px;
+    }
+}
+
+.progress {
+    border-radius: 0;
+    background-color: #363636;
+
+    &-bar {
+        background-color: #cdcdcd;
+    }
+}
+
+.art-dir {
+    background-image: url(../../images/person1.png);
+}
+
+.web-eng {
+    background-image: url(../../images/person2.png);
+}
+
+.dev {
+    background-image: url(../../images/person3.png);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+

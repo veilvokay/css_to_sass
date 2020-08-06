@@ -1,0 +1,60 @@
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 30px 20px;
+
+    .links li {
+        margin-left: 35px;
+    }
+
+    .navbar-toggler {
+        outline: none;
+        width: 30px;
+        padding: 0;
+    }
+
+    .navbar-toggler-icon {
+        background: white;
+        height: 2px;
+        position: relative;
+        width: 100%;
+
+        &::after, &::before {
+            content: '';
+            width: 100%;
+            background: white;
+            height: 2px;
+            position: absolute;
+            left: 0;
+        }
+
+        &::before {
+            top: -10px;
+        }
+
+        &::after {
+            bottom: -10px;
+        }
+    }
+
+    li a {
+        font-size: 11px;
+        color: $mainWhite;
+        font-family: $sansRegular;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font: {
+        family: $dosis;
+    }
+}
+
+span, p, li, a {
+    font: {
+        family: $sansRegular;
+    }
+}

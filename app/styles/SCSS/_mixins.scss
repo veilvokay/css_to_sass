@@ -1,0 +1,12 @@
+@mixin paddingSection ($paddingTop, $paddingRight, $paddingBottom, $paddingLeft) {
+    padding-top: $paddingTop;
+    padding-right: $paddingRight;
+    padding-bottom: $paddingBottom;
+    padding-left: $paddingLeft;
+}
+
+@mixin bgPosition ($bgPosition, $bgSize, $bgRepeat) {
+    background-position: $bgPosition;
+    background-size: $bgSize;
+    background-repeat: $bgRepeat;
+}

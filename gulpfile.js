@@ -98,7 +98,7 @@ function cleanBuild () {
 //     gulp.series(cleanBuild, img, html, fonts, css, js)
 // };
 
-// function build () doesn't work, so you have to you 'const build' construction instead
+// function build () doesn't work, so you have to use 'const build' construction instead
 const build = gulp.series(cleanBuild, img, html, fonts, css, js)
 
 function watch() {
@@ -115,12 +115,12 @@ function watch() {
 
 
 
-exports.style = style;
-exports.watch = watch;
-exports.js = js;
-exports.css = css;
-exports.html = html;
-exports.fonts = fonts;
-exports.img = img;
-exports.cleanBuild = cleanBuild;
-exports.build = build;
+exports.style = style; // converts app.scss into app.css
+exports.watch = watch; // watches *.scss, *.html and *.js
+exports.js = js; // uglifies all *.js and glues them together (main.js)
+exports.css = css; // minifies all *.css and glues them together (main.css)
+exports.html = html; // copies *.html into the build/ folder
+exports.fonts = fonts; // copies all fonts into the build/fonts/ folder
+exports.img = img; // optimises all images and puts`em into the build/images folder
+exports.cleanBuild = cleanBuild; // deletes buid/ folder
+exports.build = build; // deletes previous build/ folder and creates new one w/ all the operations written previously 
