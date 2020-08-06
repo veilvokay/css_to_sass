@@ -1,0 +1,45 @@
+.section-13 {
+    @include paddingSection(145px, 0, 60px, 0);
+
+    .arrow-down {
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: 1px solid $mainBlack;
+        border-radius: 4px;
+        bottom: 30px;
+        transform: rotate(-135deg);
+        cursor: pointer;
+
+        & [class|="fa fa"] {
+            transform: rotate(135deg);
+            color: $mainBlack;
+            font-size: 14px;
+        }
+    }
+
+    .social {
+        margin: 30px 15px 100px;
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    .col-lg-12:first-child {
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        font-size: 12px;
+        letter-spacing: 4px;
+        margin-bottom: 16px;
+    }
+
+    h5 {
+        font: {
+            family: $sansRegular;
+            size: 11px;
+            color: #999;
+        }
+    }
+}

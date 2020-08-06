@@ -1,0 +1,29 @@
+.section-12 {
+    .overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.95);
+        transition: 0.7s;
+    }
+
+    &:hover .overlay {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    h3 {
+        color: $mainWhite;
+        margin-top: 30px;
+    }
+
+    .arrow-down {
+        width: 35px;
+        height: 35px;
+
+        & .fa-map-marker {
+            transform: rotate(135deg);
+        }
+    }
+}

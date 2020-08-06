@@ -1,0 +1,17 @@
+.section-6 {
+    @include paddingSection(70px, 0, 70px, 0);
+    background: $mainBlack;
+
+    h3 {
+        color: $mainWhite;
+    }
+
+    .btn {
+        background-color: $btnBg;
+        color: $mainBlack;
+        margin-top: 25px;
+        padding: 15px 40px;
+        letter-spacing: 3px;
+        outline: none;
+    }
+}

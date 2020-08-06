@@ -1,0 +1,90 @@
+.section-8 {
+    #carouselExampleCaptions {
+        background-color: #020202;
+        @include paddingSection(145px, 0, 145px, 0)
+    }
+
+    .carousel-indicators {
+        bottom: 30px;
+
+        & li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $mainWhite;
+            margin: 0 5px;
+            border: 1px solid transparent;
+            border-top: none;
+            border-bottom: none;
+
+            &.active {
+                background: transparent;
+                border: 1px solid $mainWhite;
+            }
+        }
+    }
+
+    ol.carousel-indicators {
+        align-items: center;
+    }
+
+    .carousel-caption {
+        right: auto;
+        left: auto;
+        bottom: auto;
+        margin: auto;
+        width: 60%;
+    }
+
+    & [class|="icon"] {
+        font-size: 32px;
+    }
+
+    h3 {
+        color: $mainWhite;
+    }
+
+    p {
+        font-size: 18px;
+        color: #bdbbbb;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        font: {
+            family: $sansRegular;
+            size: 11px;
+        }
+        color: $mainGrey;
+    }
+
+    & [class|="carousel-control"] {
+        border: 50px solid transparent;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+
+    .carousel-control-next {
+        border-right: 50px solid $mainWhite;
+    }
+
+    .carousel-control-prev {
+        border-left: 50px solid $mainWhite;
+    }
+
+    .fa-angle-left, .fa-angle-right {
+        font-size: 20px;
+        position: absolute;
+        color: $mainBlack;
+    }
+
+    .fa-angle-right {
+        right: -35px;
+    }
+
+    .fa-angle-left {
+        left: -35px;
+    }
+}
